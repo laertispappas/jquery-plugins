@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="./tabs.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css">
+    <link href="./tabs.css" rel="stylesheet" type="text/css">
+
+    <title>Tabs JQuery Demo</title>
+  </head>
+
+  <body>
+    <ul class='tabs' data-content-tabs='#content-tabs'>
+      <li>
+        <a href='#ruby' class='active'>Ruby</a>
+      </li>
+      <li>
+        <a href='#scala'>Scala</a>
+      </li>
+      <li>
+        <a href='#python'>Python</a>
+      </li>
+    </ul>
+
+    <div id='content-tabs' >
+      <div class="tab-pane active" id='ruby'>
+        <p>Some Ruby stuff</p>
+      </div>
+
+      <div class="tab-pane" id="scala">
+        <p>Some scala stuff</p>
+      </div>
+
+      <div class="tab-pane" id="python">
+        <p>Some python stuff</p>
+      </div>
+    </div>
+
+    <script>
+      $(function(){
+        $(".tabs").tabs();
+      });
+    </script>
+  </body>
+</html>
